@@ -1,0 +1,15 @@
+<h2>Log in procedure</h2>
+
+<form method="POST" action="/auth/login">
+    <p>Username: </p>
+    <input type="text" name="username" placeholder="Insert your username here">
+    <p>Password: </p>
+    <input type="password" name="password">
+    <button type="submit">Log in!</button>
+</form>
+
+{{#if errorMessage}}
+<h3>{{errorMessage}}</h3>
+{{/if}}
+
+<a href="/">Back to the Homepage</a>

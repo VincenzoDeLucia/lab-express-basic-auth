@@ -1,0 +1,14 @@
+<h2>Signup procedure</h2>
+<form method="POST" action="/auth/signup">
+    <p>Username: </p>
+    <input type="text" name="username" placeholder="Insert your username here">
+    <p>Password: </p>
+    <input tnpm run dev type="password" name="password">
+    <button type="submit">Sign up!</button>
+</form>
+
+{{#if errorMessage}}
+<h3>{{errorMessage}}</h3>
+{{/if}}
+
+<a href="/">Back to the Homepage</a>
