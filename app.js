@@ -51,9 +51,9 @@ app.use(
 app.locals.title = "A Login Simulator";
 
 const index = require("./routes/index.routes");
-app.use("/", index);
-
 const authRouter = require("./routes/auth.routes");
+
+app.use("/", index);
 app.use("/auth", authRouter);
 
 module.exports = app;

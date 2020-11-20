@@ -1,7 +1,10 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<a href="auth/signup">Please Sign Up</a>
+<a href="auth/login">Please Log In</a>
 
-<a href="/auth/signup">Sign up!</a>
-
-<p>Already a user?</p>
-<a href="/auth/login">Log in!</a>
+{{#if user}}
+<h1>Welcome to your homepage, {{user.username}}</h1>
+<div>
+    <a href="/main"> Main Page</a>
+    <a href="/private"> Private page</a>
+</div>
+{{/if}}
